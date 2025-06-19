@@ -24,3 +24,9 @@ class Solution:
 
         # return the new list length
         return len(nums)
+
+'''
+Time Complexity: O(n^2) because each deletion takes O(n) and the worst case is all elements are the same,
+which is n - 2 deletion. Hence, the time complexity is O(n)+O(n^2) = O(n^2)
+Space Complexity: O(1)
+'''
