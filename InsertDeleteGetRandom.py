@@ -17,8 +17,8 @@ class RandomizedSet:
             return False
         # otherwise, insert the element in the set
 
-        self.dict[val] = len(self.list)
-        self.list.append(val)
+        self.dict[val] = len(self.list) # This is the key
+        self.list.append(val) # This is the value
         return True
     
     def remove(self, val:int) -> bool:
