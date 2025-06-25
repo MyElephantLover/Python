@@ -11,7 +11,7 @@ class RandomizedSet:
 
     def insert(self, val:int) -> bool:
         """
-        Insert a element to the set. Returns false if the element already in the set
+        Insert an element to the set. Returns False if the element already in the set
         """
         if val in self.dict:
             return False
@@ -23,10 +23,10 @@ class RandomizedSet:
     
     def remove(self, val:int) -> bool:
         """
-        Return True if the element is in the set
+        Returns True if the element is in the set
         How we delete is we get the index to delete from the HashMap / Dictionary
         Then we move the last element to the index to remove
-        Lastly, we pop the last element out of the dict
+        Lastly, we pop the last element out of the dictionary
         """
         if val in self.dict:
             last_element, idx = self.list[-1], self.dict[val] # we get the last element and index
@@ -34,8 +34,8 @@ class RandomizedSet:
             # we move the last element to the position where we removed the element
             # The above line is to fill the values to the keys, where the self.list[idx] is the index
             # we remove the original value, and we filled it with the last element
-            self.list.pop() # delete the last element
-            del self.dict[val]
+            self.list.pop() # remove the last element from the list
+            del self.dict[val] # delete the index 
             return True
         return False
     
