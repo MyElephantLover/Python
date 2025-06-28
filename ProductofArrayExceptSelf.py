@@ -6,7 +6,7 @@ class Solution:
 
         # answer[i] contains the product of all the elements to the left
         # for the element at the index 0, there are no elements to the left
-        # the same thing applis for the answer[n - 1], there are no elements to the right of nums[n - 1]
+        # the same thing applies for the answer[n - 1], there are no elements to the right of index n - 1
 
         for i in range(1, n):
             answer[i] = answer[i - 1] * nums[i - 1]
