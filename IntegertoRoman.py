@@ -15,10 +15,9 @@ class Solution:
             (5, "V"),
             (4, "IV"),
             (1, "I"),
-        ]
+            ]
 
 # define an empty list to store the roman numerals
-
         roman_digits = []
 
         for value, symbol in dic:
