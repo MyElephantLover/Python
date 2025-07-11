@@ -26,7 +26,7 @@ class Solution:
 
             return rec_isSubsequence(left_index, right_index)
         
-        return rec_isSubsequence(0 , 0)
+        return rec_isSubsequence(0 , 0) # start with the index 0
     
     # Time Complexity: O(|T|) where T is the length of the target string - the recursion will end anyways
     # when the target string exhausts first. In the worse case, we iterate over the entire target string
