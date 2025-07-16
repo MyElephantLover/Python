@@ -3,7 +3,7 @@ class Solution:
         maxarea = 0
 
         for left in range(len(height)):
-            for right in range(left + 1, len(height)):
+            for right in range(left + 1, len(height)): # loop through every pair of indices (left, right)
                 width = left - right
                 maxarea = max(maxarea, min(height[left], height[right])* width)
         return maxarea
