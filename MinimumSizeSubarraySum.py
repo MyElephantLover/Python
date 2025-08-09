@@ -23,9 +23,9 @@ class Solution:
         return res if res != float('inf') else 0 # if no such subarray returns 0
     
 # Time Complexity: O(n) where n is the length of nums, threre is a while loop inside a for loop, but the inner loop 
-# is not running n times for each iterations of the outer loop. A sliding window guarantees a maximum of 2n window
+# is not running n times for each iteration of the outer loop. A sliding window guarantees a maximum of 2n window
 # iterations
-# Space Complexity: O(1) we are not using extra space except for some integer variables which takes up constant
+# Space Complexity: O(1) we are not using extra space except for some integer variables which take up constant
 # space each
 
 
