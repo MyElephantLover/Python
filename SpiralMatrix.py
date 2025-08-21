@@ -7,7 +7,7 @@ class Solution:
         result = []
         rows, columns = len(matrix), len(matrix[0])
         left = up = 0
-        right = columns - 1 # the index is the length - 1
+        right = columns - 1 # the index is the length - 1 because Python is 0-indexing
         down = rows - 1
 
         while len(result) < rows * columns: # not reach the boundary
