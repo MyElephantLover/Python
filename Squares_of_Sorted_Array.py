@@ -19,7 +19,7 @@ class Solution:
 # Space Complexity: O(n) or O(logn)    
 
 # Because the array is sorted, we can use two-pointers to reduce time complexity by only going through the array once
-# When the abs(L) > abs(R) that means the SQR(L) > SQR(R)
+# When the abs(L) > abs(R) that means the SQR(L) > SQR(R), becasue if nums[L] is negative, its squared value would become positive
 # we can use two-pointers to reduce the time complexity to O(n)
 
 class Solution:
