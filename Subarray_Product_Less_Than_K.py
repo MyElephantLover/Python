@@ -18,7 +18,7 @@ class Solution:
         
         # initialize ans and left pointer to be 0
         ans = left = 0
-        curr = 1
+        curr = 1 # because 1 is a neutral multiplicative index
         for right in range(0, len(nums)):
             curr *= nums[right]
             while curr >= k: # meaning the window needs to shrink to the left because we are looking for greater than k
