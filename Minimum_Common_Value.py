@@ -37,7 +37,7 @@ class Solution:
         
         while first < len(nums1) and second < len(nums2):
             if nums1[first] < nums2[seond]: # meaning the element in nums1 is less
-                first += 1
+                first += 1 
             elif nums1[first] > nums2[second]:
                 second += 1
             else:
@@ -47,6 +47,7 @@ class Solution:
 
 # Time Complexity: O(m + n) where m is the length of nums2 and n is the length of nums1. 
 # Each pointer can iterate as many as (m + n) times. Each operation of the loop, we perform O(1) 
+# each pointer moves once at a time, but not both pointers
 # Space Complexity: O(1) we use a couple of variables and no additional data structure that grows with 
 # input size
 
@@ -84,14 +85,16 @@ class Solution:
         # return the minimum common value
 
         for num in nums1:
-            if Binary(num, nums2) is True:
+            if Binary(num, nums2): # in Python, "if condition" checks truthiness, not equality
                 return num
             
         return -1 # execute this block if none previous return happened
                 
 
 # Time Complexity: O(nlogm) where n is the length of nums1 and m the length of nums2
-# Space Complexity: O(1)
+# Space Complexity: O(1) we initialize several variables but not allocate extra memory proportionally to the input array
+
+
 
 
 
