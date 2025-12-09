@@ -23,7 +23,7 @@ class Solution:
         if c.isalpha(): # c is an English word, we need to pop() it out of letters and append to the ans list from the start
             ans.append(letters.pop())
         else:
-            ans.append(c) # other character remain the same position in letters
+            ans.append(c) # other character remain the same position in s
     return "".join(ans)
 
 # Time Complexity: O(n) where n is the length of the string s because we iterate over every character in s
