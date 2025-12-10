@@ -49,7 +49,7 @@ class Solution:
             # we modify the result set directly
             if result[right] == ch:
                 while left < right:
-                    result[right], result[left] = result[left], result[right]
+                    result[right], result[left] = result[left], result[right] # becasue result[right] is the index for ch, which needs to be reversed to index 0
                     left += 1
                     right -= 1
                 return "".join(result)
@@ -60,7 +60,7 @@ class Solution:
     # Space Complexity: O(n) as we create stack which grows up to n elements and in two pointers we create a result list which contains
     # n elements
 
-    
+
 
 
 
