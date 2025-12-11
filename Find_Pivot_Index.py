@@ -19,7 +19,7 @@ class Solution:
 
         # initialize variables
         S = sum(nums)
-        leftSum = 0
+        leftSum = 0 # assign the leftSum to be 0
     
         for i, x in enumerate(nums): # using enumerate extract pairs of index and the corresponding value in a list
             # enumerate() does not create a new list, it just create an interator that yield (i, x) pairs on the fly
