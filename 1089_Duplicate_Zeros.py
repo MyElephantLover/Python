@@ -18,7 +18,7 @@ class Solution:
         # initialize variables
         n = len(arr)
         zeros = 0 # the number of elements inserted before this index
-        end = n - 1 # this is the last element in the original array that can fit the new array
+        end = n - 1 # this is the last index in the original array that can fit the new array
 
         # Step 1: count zeros
 
