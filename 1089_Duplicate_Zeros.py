@@ -29,8 +29,8 @@ class Solution:
                     arr[end] == 0 # we filled the last element as 0
                     end -= 1 # reduce the shift
                     break # immediately end the loop
-            zeros += 1
-        i += 1 # increment reader pointer
+                zeros += 1 # if not at the boundary, increment zeros by 1
+            i += 1 # increment reader pointer
 
         # Step 2: Copy backwards
         last = end - zeros # the remaining spaces / indices
