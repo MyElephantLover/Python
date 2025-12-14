@@ -45,7 +45,7 @@ class Solution:
 # Time Complexity: O(n) where n is the length of the array. We do two passes on the array
 # The one is to find the duplicates(zeros), and the other one is to copy backwards
 # In the worst case, there is less or no zeros and we need to go through every element
-# Space Complexity: O(1)
+# Space Complexity: O(1) since we modify the array in-place
 
 
 
