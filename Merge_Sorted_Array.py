@@ -29,8 +29,9 @@ class Solution:
         while pointer2 >= 0: # meaning n >=1
             if pointer1 >= 0 and nums1[pointer1] >= nums2[pointer2]: # when copying backwards, we always write the bigger element to the rightmost 
                 # available position first, and the smaller value would naturally be placed to the front because:
-                # 1) largest numbers been pulled out first that creates space at the front to be overwritten safely, and res decrements by 1 
-                # if we are allowed to create another array, res, that would be the 0's at the front
+                # 1) largest numbers were pulled out first that creates space at the front to be overwritten safely, and writer_idx decrements by 1
+                # move the writer pointer to the left 
+                # if we are allowed to create another array, res, that would be the 0's at the front to be overwritten
                 nums1[writer_idx] = nums1[pointer1]
                 pointer1 -= 1
             else:
