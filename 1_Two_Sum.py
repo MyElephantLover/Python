@@ -26,7 +26,7 @@ class Solution:
 
 # Time Complexity: O(n) as we traverse the dictionary / hash table once to look for match with num; Python use hash table to use
 # a hash fucntion to get to an average of O(1) time for insert, lookup and fetch
-# Space Complexity: O(1)
+# Space Complexity: O(n) as the memory the hash table uses would scale linearly with the input size
 
 # Brute Force
 
