@@ -23,7 +23,7 @@ class Solution:
                 # add c to the set
                 seen.add(c)
 
-# Time Complexity: O(1)
+# Time Complexity: O(1) since the set stores unique values and traverse the set takes O(1) on average
 # Space Complexity: O(n) the set space grows linearly with the input size
 
 
