@@ -38,4 +38,4 @@ class Solution:
                     return [i, j]
                 
 # Time Complexity: O(n^2) as we have two for loops
-# Space Complexity: O(1)
+# Space Complexity: O(1) as we do not allocate extra memory
