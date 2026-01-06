@@ -1,0 +1,333 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"i",
+				"items"
+			],
+			[
+				"or",
+				"order"
+			],
+			[
+				"c",
+				"create"
+			],
+			[
+				"Or",
+				"OrderItem"
+			],
+			[
+				"Pr",
+				"Product"
+			],
+			[
+				"cook",
+				"cookieData"
+			],
+			[
+				"pro",
+				"product"
+			],
+			[
+				"prod",
+				"Product"
+			],
+			[
+				"car",
+				"cart"
+			],
+			[
+				"Deci",
+				"DecimalField"
+			],
+			[
+				"get",
+				"getElementsByTagName"
+			],
+			[
+				"cr",
+				"create"
+			],
+			[
+				"js",
+				"JSON"
+			],
+			[
+				"res",
+				"response"
+			],
+			[
+				"getE",
+				"getElementsByClassName"
+			],
+			[
+				"e",
+				"except"
+			],
+			[
+				"ima",
+				"image"
+			],
+			[
+				"med",
+				"MEDIA_URL"
+			],
+			[
+				"app",
+				"apps"
+			],
+			[
+				"ra",
+				"raise"
+			],
+			[
+				"clea",
+				"cleaned_data"
+			],
+			[
+				"Tex",
+				"Textarea"
+			],
+			[
+				"cle",
+				"cleaned_data"
+			],
+			[
+				"erro",
+				"errors"
+			],
+			[
+				"for",
+				"forms"
+			],
+			[
+				"description",
+				"get_description"
+			],
+			[
+				"re",
+				"request"
+			],
+			[
+				"k",
+				"kwargs"
+			],
+			[
+				"HTTP",
+				"HTTPResponse"
+			],
+			[
+				"bla",
+				"blank"
+			],
+			[
+				"produc",
+				"products"
+			],
+			[
+				"moe",
+				"models"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/joannechen/Creative Cloud Files/MyElephantLover/Java/MiddleLinkedList.java",
+		"/Users/joannechen/dev/ecommerce/ecommerce/store/utils.py",
+		"/Users/joannechen/dev/ecommerce/ecommerce/static/js/cart.js",
+		"/Users/joannechen/dev/ecommerce/ecommerce/store/templates/store/Main.html",
+		"/Users/joannechen/dev/ecommerce/ecommerce/store/models.py",
+		"/Users/joannechen/dev/ecommerce/ecommerce/store/templates/store/Checkout.html",
+		"/Users/joannechen/dev/ecommerce/ecommerce/store/urls.py",
+		"/Users/joannechen/dev/ecommerce/ecommerce/store/views.py",
+		"/Users/joannechen/dev/ecommerce/ecommerce/store/templates/store/Store.html",
+		"/Users/joannechen/dev/ecommerce/lib/python3.7/site-packages/django/contrib/gis/gdal/raster/band.py",
+		"/Users/joannechen/dev/ecommerce/ecommerce/store/templates/store/Cart.html",
+		"/Users/joannechen/dev/ecommerce/ecommerce/ecommerce/settings.py",
+		"/Users/joannechen/dev/ecommerce/ecommerce/ecommerce/urls.py",
+		"/Users/joannechen/dev/ecommerce/ecommerce/store/admin.py",
+		"/Users/joannechen/dev/ecommerce/ecommerce/store/migrations/0001_initial.py",
+		"/Users/joannechen/dev/ecommerce/ecommerce/static/css/main.css",
+		"/Users/joannechen/ecommerce/ecommerce/store/templates/store/url.py",
+		"/Users/joannechen/dev/trydjango/products/models.py",
+		"/Users/joannechen/dev/trydjango/trydjango/urls.py",
+		"/Users/joannechen/dev/trydjango/templates/home.html",
+		"/Users/joannechen/dev/trydjango/products/forms.py",
+		"/Users/joannechen/dev/trydjango/products/templates/products/product_detail.html",
+		"/Users/joannechen/dev/trydjango/products/templates/products/product_create.html",
+		"/Users/joannechen/dev/trydjango/products/views.py",
+		"/Users/joannechen/dev/trydjango/products/templates/products/detail.html",
+		"/Users/joannechen/dev/trydjango/templates/contact.html",
+		"/Users/joannechen/dev/trydjango/templates/about.html",
+		"/Users/joannechen/dev/trydjango/templates/navbar.html",
+		"/Users/joannechen/dev/trydjango/templates/base.html",
+		"/Users/joannechen/dev/trydjango/pages/views.py",
+		"/Users/joannechen/dev/trydjango/trydjango/settings.py",
+		"/Users/joannechen/dev/trydjango/products/admin.py",
+		"/Users/joannechen/dev/trydjango/manage.py",
+		"/Users/joannechen/Downloads/snow1 (1).sas7bdat",
+		"/Users/joannechen/Downloads/snow (1).sas7bdat",
+		"/Users/joannechen/Downloads/OnionRing.xls"
+	],
+	"find":
+	{
+		"height": 50.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 50.0
+	},
+	"input":
+	{
+		"height": 50.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"pinned_build_system": "",
+	"project": "141_Linked_List_Cycle.sublime-project",
+	"replace":
+	{
+		"height": 96.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 333.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
