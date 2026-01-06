@@ -11,7 +11,8 @@ from typing import Optional
 class ListNode:
     def __init__(self, val = 0, next = None):
         self.val = val
-        self.next = next # since the list is sorted, we only move forward, there's no prev in our linked list
+        self.next = next # since the list is sorted, we only move forward
+        # This is a singly linked list, there's no prev as we only need to move forward
 
 class Solution:
     def removeDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
