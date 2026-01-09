@@ -32,9 +32,10 @@ class Solution:
             
             if node.val >= maxSoFar:
                 good = 1 # good is an indicator here to dictate if the curr node is good
-                new_max= math.max(node.val, maxSoFar) # we use new_max here to advoid accidentally change the parent's parameter
+                new_max= max(node.val, maxSoFar) # we use new_max here to advoid accidentally change the parent's parameter
             else:
                 good = 0
+                new_max = max(node.val, maxSoFar) # new_max needs to be set on both if / else
 
             return good + dfs(node.left, new_max) + dfs(node.right, new_max) # the actual counting happens here
 
