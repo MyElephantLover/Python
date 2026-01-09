@@ -36,7 +36,7 @@ class Solution:
             else:
                 good = 0
 
-            return good + self.dfs(node.left, new_max) + self.dfs(node.right, new_max) # the actual counting happens here
+            return good + dfs(node.left, new_max) + dfs(node.right, new_max) # the actual counting happens here
 
         return dfs(root, root.val) # the public API, countGoodNodes only runs once and return the count
     
