@@ -36,7 +36,20 @@ class Solution:
             for j in range(i + 1, n): # we only look at the upper triangle of the matrix to advoid duplicates
                 if isConnected[i][j]: # if isConnected[i][j] == 1 or 0:
                     graph[i].append(j) # for each connection (i,j) we add each direction manually
-                    graph[j].append(i)
+                    graph[j].append(i) # we add both directions bc graph is undirected
+
+        """
+        adjacency list representing a graph
+
+        graph = {
+                key: [value]
+                1: [2, 0],
+                2: [3, 4]
+                3: []
+        }
+        
+        
+        """
 
         """
           j (gt i to n)
@@ -50,9 +63,9 @@ class Solution:
         for i in range(n):
             if i not in seen: # if city i has not been assigned to a province yet, it starts a new province
                 # add all nodes of a connected component to the set
-                counter += 1
-                seen.add(i)
-                dfs(i)
+                counter += 1 # when do we know we've found a new province? if i not in seen, it must start a new province
+                seen.add(i) # mark the starting city as visited
+                dfs(i) # explore its neighbors
 
         return counter
 
