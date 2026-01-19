@@ -66,7 +66,7 @@ class Solution:
             i -= 1
             j -= 1
 
-            return True
+        return True
 
 
 # Time Complexity: O(n) where n is the total of input sizes = length of s and length of t
