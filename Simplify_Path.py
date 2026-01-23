@@ -22,7 +22,6 @@
 
 class Solution:
     def simplifiedPath(self, path: str) -> str:
-        # stack = {}
         stack = []
 
         # for ch in path:
@@ -31,13 +30,28 @@ class Solution:
             if part == '' or part == '.':
                 continue
             if part == '..': # parent 
-                if stack:
+                if stack: # an non-empty list is True - does the stack have at least one directory in it?
+                    # the same as if len(stack) > 0
                     stack.pop()
+                    # '..' requires going to the parent directory -> remove the last directory
+                    # so we check if there's something to remove in stack
                 else:
+                    # this means this token is not:
+                    # 1) empty ""
+                    # 2) current directory '.'
+                    # 3) parent directory '..'
                     stack.append(part)
+                    # the stack means the root directory to where I am now
+                    # so when we move forward to a folder, we add it to the path
         return '/' + '/'.join(stack)
     
-## TBD
+# example path: /usr/local/bin
+# stack = ['user', 'local', 'bin']
+# the question stated that any sequence of periods not match '.' or '..' are valid directory
+# so we store them. e.g. '/a..b/', '/.../'
+    
+## Time Complexity: O(n) path scan once
+## Space Complexity: O(n)
 
 
             
