@@ -29,18 +29,18 @@ class Solution:
         for part in path.split('/'):
             if part == '' or part == '.': # '.' means the current directory, we do nothing
                 continue
-            if part == '..': # parent 
+            elif part == '..': # parent 
                 if stack: # an non-empty list is True - does the stack have at least one directory in it?
                     # the same as if len(stack) > 0
                     stack.pop()
                     # '..' requires going to the parent directory -> remove the last directory
                     # so we check if there's something to remove in stack
-                else:
-                    # this means this token is not:
-                    # 1) empty ""
-                    # 2) current directory '.'
-                    # 3) parent directory '..'
-                    stack.append(part)
+            else:
+                # this means this token is not:
+                # 1) empty ""
+                # 2) current directory '.'
+                # 3) parent directory '..'
+                stack.append(part)
                     # the stack means the root directory to where I am now
                     # so when we move forward to a folder, we add it to the path
         return '/' + '/'.join(stack)
