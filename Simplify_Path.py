@@ -27,7 +27,7 @@ class Solution:
         # for ch in path:
         #     check = stack.top()
         for part in path.split('/'):
-            if part == '' or part == '.':
+            if part == '' or part == '.': # '.' means the current directory, we do nothing
                 continue
             if part == '..': # parent 
                 if stack: # an non-empty list is True - does the stack have at least one directory in it?
