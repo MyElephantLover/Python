@@ -35,7 +35,7 @@ class Solution:
                 tail.next = curr2
                 curr2 = curr2.next
 
-            tail = tail.next
+            tail = tail.next # the tail pointer updates after either branch executes
 
         # attach remaining nodes - only one list can have nodes left, since both lists are sorted, the remaining nodes
         # can be appended directly without further comparison
