@@ -15,7 +15,6 @@ from typing import List, Dict
 class Solution:
     def parseKeyValueConfig(self, config: List[str]) -> Dict[str, str]:
         result = {}
-
         # edge cases
         for line in config:
             if "=" not in line:
