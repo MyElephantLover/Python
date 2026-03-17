@@ -21,7 +21,7 @@ class Solution:
             # we are looking at
             if ch not in count:
                 return False
-            count[ch] -= 1
+            count[ch] -= 1 # only runs if ch in s
             if count[ch] < 0: # this means we used more ch than it's available in s
                 return False
             
