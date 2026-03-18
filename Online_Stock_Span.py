@@ -37,7 +37,7 @@ class StockSpanner:
 
         # merge all previous prices that are <= curr_price
         # self.stack is a list of tuples - each element stores price and span
-        # price is the stock price on that day; span is how many consecutive days that price already covered
+        # price is the stock price on that day; span is how many consecutive days that price already covers
         while self.stack and self.stack[-1][0] <= price:
             span += self.stack.pop()[1] # extract the span
 
@@ -48,7 +48,7 @@ class StockSpanner:
 # obj = StockSpanner()
 # param_1 = obj.next(price)
 
-# Time: O(1) a single call can pop many items, but each pair (price, span) is pushed and poped at most once - so across all call, total work is linear
+# Time: O(1) a single call can pop many items, but each pair (price, span) is pushed and popped at most once - so across all call, total work is linear
 # Space: O(n) the stack can grow up to n, where n is the number of call
 
 
