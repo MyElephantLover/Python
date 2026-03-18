@@ -52,3 +52,23 @@ class StockSpanner:
 # Space: O(n) the stack can grow up to n, where n is the number of call
 
 
+# Consider the following pseudocode:
+
+# stack = []
+# for (num : nums_array) {
+#     while (stack not empty AND num <= stack.top()) {
+#         stack.pop()
+#     }
+#     stack.push(num)
+# }
+# The following is a list of questions for you to answer. Click on each question to reveal the answer.
+
+# What kind of data structure is this? How does the code implement it?
+
+# Monotonic increasing stack: the code implements it as a stack that as long as its top value >= num
+# the stack pop the top value, and add the num, so it remains increasing order that the remaining top is less than or equal to num
+
+# What is the time complexity of this code, where n is the length of nums_array? Consider that there is a nested while loop.
+
+# stack.pop() and stack.push() is O(1). Each element is pushed once and popped at most once; even though there's nested while loop,
+# across the whole algorithm, the total number of pops is O(n)
