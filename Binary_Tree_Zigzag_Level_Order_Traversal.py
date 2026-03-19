@@ -25,11 +25,11 @@ class Solution:
 
             while queue: # keep going as long as there're nodes left to process
                 # we start with just the root node, and gradually add nodes level by level
-                level_size = len(queue)
+                level_size = len(queue) # captures how many nodes are in the curr level
                 level = [] # temp list to store values of node at the curr level;  after finishing the level, we append it to result
 
                 for _ in range(level_size):
-                    node = queue.popleft()
+                    node = queue.popleft() # takes next node to process (FIFO)
                     level.append(node.val)
 
                     if node.left:
