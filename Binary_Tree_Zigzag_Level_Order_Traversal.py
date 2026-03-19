@@ -23,7 +23,8 @@ class Solution:
             left_to_right = True # a flag that controls directions (binary switch)
             # when it is True, keep left -> right; False: reverse
 
-            while queue:
+            while queue: # keep going as long as there're nodes left to process
+                # we start with just the root node, and gradually add nodes level by level
                 level_size = len(queue)
                 level = [] # temp list to store values of node at the curr level;  after finishing the level, we append it to result
 
