@@ -25,6 +25,7 @@ class Solution:
 
             while queue: # keep going as long as there're nodes left to process
                 # we start with just the root node, and gradually add nodes level by level
+                # Each iteration of this loop process one full level of the tree
                 level_size = len(queue) # captures how many nodes are in the curr level
                 level = [] # temp list to store values of node at the curr level;  after finishing the level, we append it to result
 
@@ -38,11 +39,11 @@ class Solution:
                     if node.right:
                         queue.append(node.right)
 
-                if not left_to_right:
+                if not left_to_right: # this control the zigzag pattern per level
                     level.reverse()
 
-                result.append(level)
-                left_to_right = not left_to_right # it flips the direction
+                result.append(level) # inside while loop because each level is a separate row in the result
+                left_to_right = not left_to_right # it flips the direction / prepare the direction for the next level
 
             return result
         
