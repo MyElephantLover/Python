@@ -19,7 +19,7 @@ from typing import Optional
 class Solution:
     def validateBST(self, root: Optional[TreeNode]) -> bool:
         def dfs(node, low, high):
-            if not node: # an empty tree is considered a valid BST
+            if not node: # an empty tree is considered a valid BST - base case
                 return True
             
             if not(low < node.val < high):
